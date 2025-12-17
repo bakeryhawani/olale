@@ -15,8 +15,12 @@
         <div class="nav-container">
             <a href="#" class="logo">KaVaMi<span>.</span></a>
             
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="nav-list">
+                <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
                 <li class="dropdown" id="member-services" style="display:none;">
                     <a href="javascript:void(0)" class="dropbtn">Our Portfolios <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-visual">
@@ -38,8 +42,11 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
                 <li><button class="btn-donate" onclick="openModal('donate-modal')">Support Missions</button></li>
+                <li class="mobile-only">
+                    <button class="btn-login" onclick="openModal('login-modal')">Login</button>
+                </li>
             </ul>
 
             <div class="auth-ui" id="auth-ui">
@@ -66,7 +73,7 @@
         <div class="container">
             <div class="warning-box">
                 <h2><i class="fas fa-exclamation-triangle"></i> LOOK BEFORE YOU LEAP!!</h2>
-                <p>Partner ONLY with God-fearing Christians with a credible background. We protect your life savings from scams common in East Africa through our partnership with <strong>Law Society of kenya Advocates</strong> (20+ Years Practice).</p>
+                <p>Partner ONLY with God-fearing Christians with a credible background. We protect your life savings from scams common in East Africa through our partnership with <strong>Law Society of kenya (LSK)</strong> (20+ Years Practice).</p>
             </div>
         </div>
     </section>
