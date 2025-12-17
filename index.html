@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaVaMi | Kamato Valley Millennium - Relocation & Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">KaVaMi<span>.</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown" id="member-services" style="display:none;">
+                    <a href="javascript:void(0)" class="dropbtn">Our Portfolios <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-visual">
+                        <div class="drop-column">
+                            <img src="land.jpg" alt="Green Land Ready for Sale">
+                            <a href="#real-estate">Real Estate & Land</a>
+                        </div>
+                        <div class="drop-column">
+                            <img src="tours.jpg" alt="Kenya Tours and Travel">
+                            <a href="#tours">Tours & Travel</a>
+                        </div>
+                        <div class="drop-column">
+                            <img src="missionary.jpg" alt="Evangelical Missionary Work">
+                            <a href="#missions">Missionary Work</a>
+                        </div>
+                        <div class="drop-column">
+                            <img src="business.jpg" alt="Business Conferences">
+                            <a href="#conferences">Conferences</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><button class="btn-donate" onclick="openModal('donate-modal')">Support Missions</button></li>
+            </ul>
+
+            <div class="auth-ui" id="auth-ui">
+                <button class="btn-login" onclick="openModal('login-modal')">Login</button>
+                <button class="btn-primary" onclick="openModal('signup-modal')">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Kamato Valley Millennium</h1>
+                <p>Specializing in Real Estate, Tours, and Investment Opportunities for the African Diaspora and Foreigners.</p>
+                <div class="hero-btns">
+                    <button class="btn-gold" onclick="openModal('signup-modal')">Invest in Kenya</button>
+                    <a href="https://wa.me/254728447027" class="btn-outline">Speak with Evangelist Seth</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="trust-warning">
+        <div class="container">
+            <div class="warning-box">
+                <h2><i class="fas fa-exclamation-triangle"></i> LOOK BEFORE YOU LEAP!!</h2>
+                <p>Partner ONLY with God-fearing Christians with a credible background. We protect your life savings from scams common in East Africa through our partnership with <strong>Modi Advocates</strong> (20+ Years Practice).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container grid-2">
+            <div class="about-text">
+                <h2>Quality Over Quantity</h2>
+                <p>We are a small, dedicated Kenyan company. While mega-projects often defraud innocent investors, at <strong>KaVaMi</strong>, your welfare comes first and profit later. We provide guaranteed results in Nairobi, Kisumu, and Homa Bay.</p>
+                <div class="county-tags">
+                    <span>Nairobi</span> <span>Kisumu</span> <span>Homa Bay</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="homa.jpg" alt="Our Villages in Homa Bay County">
+            </div>
+        </div>
+    </section>
+
+    <section id="portal-content" class="portal-section" style="display:none;">
+        <div class="container">
+            <h2 class="section-title">Verified Land & Housing</h2>
+            <div class="property-grid">
+                <div class="property-card">
+                    <img src="greenland.jpg" alt="Lush Green Land for Sale in Kenya">
+                    <div class="p-info">
+                        <h3>Homa Bay Lakeside Plots</h3>
+                        <p>Fertile land ready for building or farming. Full legal vetting by Modi Advocates.</p>
+                        <span class="status">Member Only Access</span>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <img src="housing.jpg" alt="Affordable Christian Housing">
+                    <div class="p-info">
+                        <h3>Affordable Housing</h3>
+                        <p>Partnering with Born Again Christian families for safe rental and purchase.</p>
+                        <span class="status">Available Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="creative-section">
+        <div class="container">
+            <h2>Creative Industry & Culture</h2>
+            <div class="creative-grid">
+                <div class="creative-item">
+                    <img src="frica.jpg" alt="Investing in African Art">
+                    <p>Fine Art Exhibitions & Sculptures</p>
+                </div>
+                <div class="creative-item">
+                    <img src="poetry.jpg" alt="Art and Poetry in Rural Villages">
+                    <p>Rural Village Poetry & Film</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy-policy">
+        <div class="container">
+            <h2>Your Security & Privacy Policy</h2>
+            <p>KaVaMi is committed to the protection of Diaspora and Foreign investors. We ensure that every document, from Work Permits to Title Deeds, is handled by God-fearing professionals. Your data is strictly used for legal relocation purposes and is never shared with third-party scammers. We provide the "Legal Cover" required for working and doing business inside Kenya smoothly.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-contact">
+                <h3>Contact KaVaMi</h3>
+                <p><strong>Evangelist Seth Olale Snr</strong> (Founder/CEO)</p>
+                <p>Cell: +254 728447027 | +254 729810679</p>
+                <p><strong>Patroba Alpha Olale</strong> (Manager)</p>
+                <p>Cell: +254 111592588</p>
+            </div>
+            <div class="footer-mission">
+                <h3>Our Vision</h3>
+                <p>Leading souls to Jesus Christ and transforming lives in Africa through ethical investment and missionary work.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Shalom! May God Bless You and Protect You. &copy; 2025 Kamato Valley Millennium.</p>
+        </div>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            <h2>Member Login</h2>
+            <form onsubmit="handleAuth(event, 'login')">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn-gold full">Login to Portal</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal('signup-modal')">&times;</span>
+            <h2>Register as Investor</h2>
+            <form onsubmit="handleAuth(event, 'signup')">
+                <input type="text" id="reg-name" placeholder="Full Name" required>
+                <input type="email" id="reg-email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn-gold full">Register & Notify CEO</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="donate-modal" class="modal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal('donate-modal')">&times;</span>
+            <h2>Donate to the Needy</h2>
+            <p>Support our Evangelical work providing food, clothes, and school uniforms to orphans and widows.</p>
+            <button class="btn-gold full">Donate via PayPal/M-Pesa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
